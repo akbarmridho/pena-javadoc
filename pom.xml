@@ -28,6 +28,9 @@
                             <head>Animal class:</head>
                         </tag>
                     </tags>
+                    <excludePackageNames>
+                        org.penateam.snippet-files
+                    </excludePackageNames>
                 </configuration>
             </plugin>
         </plugins>

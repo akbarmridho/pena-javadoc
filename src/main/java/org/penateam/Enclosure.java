@@ -47,7 +47,7 @@ public class Enclosure<T extends Animal> {
      *
      * @param i animal index
      * @return The animal instance
-     * @throws IndexOutOfBoundsException When i < 0 or i >= enclosure size
+     * @throws IndexOutOfBoundsException When i {@literal <} 0 or i {@literal >}= enclosure size
      */
     public T getAnimalAt(int i) {
         return this.animals.get(i);
@@ -57,7 +57,7 @@ public class Enclosure<T extends Animal> {
      * Method to remove animal that reside at certain index inside the enclosure
      *
      * @param i animal index
-     * @throws IndexOutOfBoundsException When i < 0 or i >= enclosure size
+     * @throws IndexOutOfBoundsException When i {@literal <} 0 or i {@literal >}= enclosure size
      */
     public void removeAnimalAt(int i) {
         this.animals.remove(i);
