@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Class that hold one class of {@link org.penateam.Animal}
  *
  *
- * {@snippet class=EnclosureExample}
+ * {@snippet class=EnclosureExample region=main}
  * @param <T> Derivative class that extend Animal abstract class
  */
 public class Enclosure<T extends Animal> {

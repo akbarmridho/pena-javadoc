@@ -5,6 +5,7 @@ import org.penateam.Panda;
 
 public class EnclosureExample {
     public static void main(String... args) throws Exception {
+        // @start region=main
         var mixedEnclosure = new Enclosure<>();
 
         var lion = new Lion("Simba", 5);
@@ -16,5 +17,6 @@ public class EnclosureExample {
         if (!mixedEnclosure.isEmpty() && mixedEnclosure.safeForPetting()) {
             mixedEnclosure.feed();
         }
+        // @end region=main
     }
 }
