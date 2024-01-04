@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Class that hold one class of {@link org.penateam.Animal}
  *
  *
- *
+ * {@snippet class=EnclosureExample}
  * @param <T> Derivative class that extend Animal abstract class
  */
 public class Enclosure<T extends Animal> {
@@ -101,7 +101,13 @@ public class Enclosure<T extends Animal> {
 
     /**
      * Method that will check if there's an animal that not friendly inside the enclosure
-     *
+     * {@snippet :
+     *      var enclosure = new Enclosure<Panda>();
+     *      // add some pandas
+     *      if (enclosure.safeForPetting()) {
+     *          enclosure.feed();
+     *      }
+     * }
      * @return true if all animal inside enclosure is friendly
      */
     public boolean safeForPetting() {
